@@ -1,6 +1,8 @@
 val ktor_version: String by project
 val kotlin_version: String by project
 val logback_version: String by project
+val exposed_version: String by project
+val postgresql_version: String by project
 
 plugins {
     application
@@ -22,6 +24,14 @@ repositories {
 }
 
 dependencies {
+    //Database with Expose
+    implementation("org.jetbrains.exposed:exposed-core:$exposed_version")
+    implementation("org.jetbrains.exposed:exposed-dao:$exposed_version")
+    implementation("org.jetbrains.exposed:exposed-jdbc:$exposed_version")
+
+    //PostgresQL
+    implementation("org.postgresql:postgresql:$postgresql_version")
+
     implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
     implementation("io.ktor:ktor-server-content-negotiation-jvm:$ktor_version")
     implementation("io.ktor:ktor-server-cio-jvm:$ktor_version")
