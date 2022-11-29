@@ -1,4 +1,4 @@
-package com.example.database.core
+package com.example.data.core
 
 import kotlinx.coroutines.Dispatchers
 import org.jetbrains.exposed.sql.Database
