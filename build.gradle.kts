@@ -32,6 +32,9 @@ dependencies {
     //PostgresQL
     implementation("org.postgresql:postgresql:$postgresql_version")
 
+    //Serialization
+    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
+
     implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
     implementation("io.ktor:ktor-server-content-negotiation-jvm:$ktor_version")
     implementation("io.ktor:ktor-server-cio-jvm:$ktor_version")
