@@ -1,4 +1,4 @@
-package com.example.domain.model
+package com.example.features.account.domain.model
 import kotlinx.serialization.Serializable
 
 @Serializable

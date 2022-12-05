@@ -1,8 +1,8 @@
-package com.example.data.dao
+package com.example.features.account.data.dao
 
-import com.example.data.core.DatabaseFactory.dbQuery
-import com.example.data.dto.UserDto
-import com.example.data.tables.User
+import com.example.database.core.DatabaseFactory.dbQuery
+import com.example.features.account.data.model.UserDto
+import com.example.database.tables.User
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 

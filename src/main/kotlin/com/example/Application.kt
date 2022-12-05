@@ -14,3 +14,5 @@ fun Application.module() {
     configureRouting()
     configureSerialization()
 }
+
+const val API_VERSION = "/v1"

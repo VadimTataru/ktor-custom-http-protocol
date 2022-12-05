@@ -1,7 +1,8 @@
 package com.example.plugins
 
-import com.example.domain.model.AccountUser
-import com.example.domain.model.users
+import com.example.API_VERSION
+import com.example.features.account.domain.model.AccountUser
+import com.example.features.account.domain.model.users
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
@@ -12,7 +13,7 @@ fun Application.configureAccountRouting() {
 
     routing {
 
-        route(path = "/account/register") {
+        route(path = "$API_VERSION/account/register") {
             get {
                 call.respondText("register")
             }
@@ -24,7 +25,7 @@ fun Application.configureAccountRouting() {
             }
         }
 
-        route(path = "/account/login") {
+        route(path = "$API_VERSION/account/login") {
             get {
                 call.respondText("login")
             }
@@ -34,7 +35,7 @@ fun Application.configureAccountRouting() {
             }
         }
 
-        route(path = "/account/logout") {
+        route(path = "$API_VERSION/account/logout") {
             get {
                 call.respondText("logout")
             }

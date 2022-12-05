@@ -1,6 +1,6 @@
-package com.example.data.dao
+package com.example.features.account.data.dao
 
-import com.example.data.dto.UserDto
+import com.example.features.account.data.model.UserDto
 
 interface UserDao {
     suspend fun getUsers(): List<UserDto>
